@@ -1,19 +1,28 @@
 {
-  "name": "Matrimony_FinalSetup",
+  "name": "MM_New",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Meera",
-  "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "fast-two-sms": "^3.0.0",
+    "helmet": "^6.0.1",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "otp-generator": "^4.0.1",
     "pg": "^8.10.0",
-    "pine": "^1.1.1",
+    "pino": "^8.11.0",
     "sequelize": "^6.30.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
