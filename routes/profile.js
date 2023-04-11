@@ -9,16 +9,15 @@ const {
   createProfile,
 } = require("../controllers/profile");
 const { profilePOST, profileGET } = require("../schemas/profile");
-const verifyToken = require("../middlewares/verify.token");
 
 //Create new record Method
 router.post("/profile", checkReq(profilePOST, "body"), createProfile);
 
 //Get all Method
-// router.get("/profile", getAllprofile);
+router.get("/profile", getAllProfile);
 
 //Get by ID Method
-router.get("/profile", checkReq(profileGET, "query"), getProfileById);
+// router.get("/profile/:id", checkReq(profileGET, "params"), getProfileById);
 
 //Update by ID Method
 router.patch("/profile/:id", updateProfile);
