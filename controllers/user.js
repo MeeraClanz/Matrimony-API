@@ -4,18 +4,6 @@ const { success, error } = require("../helpers/response");
 const logger = require("../helpers/logger");
 const { getAccessToken } = require("../helpers/token");
 
-// let result = await Employee.findOne({email_id: req.body.email_id});
-// //console.log(result)
-// if(result && bcryptjs.compareSync(req.body.password, result.password)){
-//   let token = getAccessToken(result);
-//   let output = {};
-//   output._id = result._id;
-//   output.email_id = result.email_id;
-//   output.roles = result.roles;
-//   output.token = token;
-//   output.name = result.first_name+" "+result.last_name;
-//   res.status(200).json(success("OK", output, res.statusCode));
-
 //post
 const createNewUser = async (req, res) => {
   logger.info("createNewUser created");

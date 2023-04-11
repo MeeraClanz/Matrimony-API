@@ -12,12 +12,7 @@ const { profilePOST, profileGET } = require("../schemas/profile");
 const verifyToken = require("../middlewares/verify.token");
 
 //Create new record Method
-router.post(
-  "/profile",
-  verifyToken,
-  checkReq(profilePOST, "body"),
-  createProfile
-);
+router.post("/profile", checkReq(profilePOST, "body"), createProfile);
 
 //Get all Method
 // router.get("/profile", getAllprofile);
