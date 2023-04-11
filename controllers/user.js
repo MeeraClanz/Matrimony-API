@@ -22,7 +22,7 @@ const createNewUser = async (req, res) => {
     if (result) {
       let token = getAccessToken(result);
       let output = {};
-      output._id = result._id;
+      output.id = result.id;
       output.mobile_number = result.mobile_number;
       output.otp = result.otp;
       output.token = token;
